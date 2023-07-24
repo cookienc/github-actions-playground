@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.boot:spring-boot-docker-compose:3.1.1" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.springframework.boot" artifactId="spring-boot-docker-compose" version="3.1.1" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-docker-compose/3.1.1/fde3d0f9ef2a016ea204f9ccd281d1d9d78947cc/spring-boot-docker-compose-3.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-docker-compose/3.1.1/f5f3973f1ec3617bfc9bc98e3873609f81be96ae/spring-boot-docker-compose-3.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
