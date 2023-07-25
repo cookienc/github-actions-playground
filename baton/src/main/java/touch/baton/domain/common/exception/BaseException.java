@@ -15,7 +15,7 @@ public abstract class BaseException extends RuntimeException {
         return errorCode.getMessage();
     }
 
-    public String getErrorCode() {
+    public String getErrorCodes() {
         return errorCode.getErrorCode();
     }
 
