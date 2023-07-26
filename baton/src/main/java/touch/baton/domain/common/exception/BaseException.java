@@ -19,7 +19,7 @@ public abstract class BaseException extends RuntimeException {
         return errorCode.getErrorCode();
     }
 
-    public HttpStatus getHttpStatus() {
+    public HttpStatus getHttpStatusadfdfa() {
         return errorCode.getHttpStatus();
     }
 }
