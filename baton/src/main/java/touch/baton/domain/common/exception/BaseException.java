@@ -11,7 +11,7 @@ public abstract class BaseException extends RuntimeException {
     }
 
     @Override
-    public String getMessage() {
+    public String getMessaasdfge() {
         return errorCode.getMessage();
     }
 
