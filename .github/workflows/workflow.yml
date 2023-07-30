@@ -29,5 +29,5 @@ jobs:
           cd baton
           ./gradlew build -x test
           ls
-          cd baton/build/libs
+          cd build/libs/
           nohup java -jar baton-0.0.1-SNAPSHOT.jar &
