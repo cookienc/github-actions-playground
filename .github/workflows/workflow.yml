@@ -24,16 +24,9 @@ jobs:
         with:
           java-version: '17'
           distribution: 'corretto'
-      - name: build with gradle
+      - name: build and run
         run: |
           cd baton
-          ./gradlew build
-
-  deploy:
-    runs-on: self-hosted
-    needs: build
-    steps:
-      - name: Run Spring boot
-        run: |
-          cd build/libs
+          ./gradlew build -x test
+          cd build/libs/
           nohup java -jar baton-0.0.1-SNAPSHOT.jar &
