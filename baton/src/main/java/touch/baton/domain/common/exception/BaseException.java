@@ -15,7 +15,7 @@ public abstract class BaseException extends RuntimeException {
         return errorCode.getMessage();
     }
 
-    public String getErrorCodesdfa() {
+    public String getErrorCode() {
         return errorCode.getErrorCode();
     }
 
