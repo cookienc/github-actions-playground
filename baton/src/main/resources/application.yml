@@ -2,7 +2,7 @@ spring:
   flyway:
     enabled: false
   datasource:
-    url: jdbc:mysql://172.18.0.2:3306/baton_dev
+    url: jdbc:mysql://172.19.0.2:3306/baton_dev
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: baton123
