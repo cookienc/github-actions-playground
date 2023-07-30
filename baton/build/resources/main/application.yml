@@ -1,6 +1,11 @@
 spring:
   flyway:
     enabled: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/baton_dev
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: baton123
   jpa:
     properties:
       hibernate:

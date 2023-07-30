@@ -30,4 +30,5 @@ jobs:
           ./gradlew build -x test
           ls
           cd build/libs/
-          nohup java -jar baton-0.0.1-SNAPSHOT.jar &
+          docker build --platform linux/arm64/v8 -t 2023baton/2023baton .
+          docker run --name spring-baton -p 8080:8080 2023baton/2023baton:latest 1>> build.log 2>> error.log &
