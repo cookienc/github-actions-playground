@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="touch.baton.BatonApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-19T09:28:07" hostname="seokho-MacBookAir.local" time="0.277">
+<testsuite name="touch.baton.BatonApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-30T05:45:35" hostname="seokho-MacBookAir.local" time="0.299">
   <properties/>
-  <testcase name="contextLoads()" classname="touch.baton.BatonApplicationTests" time="0.277"/>
-  <system-out><![CDATA[18:28:05.502 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [touch.baton.BatonApplicationTests]: BatonApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-18:28:05.560 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration touch.baton.BatonApplication for test class touch.baton.BatonApplicationTests
+  <testcase name="contextLoads()" classname="touch.baton.BatonApplicationTests" time="0.299"/>
+  <system-out><![CDATA[14:45:33.046 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [touch.baton.BatonApplicationTests]: BatonApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:45:33.107 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration touch.baton.BatonApplication for test class touch.baton.BatonApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -13,33 +13,33 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.1)
 
-2023-07-19T18:28:05.723+09:00  INFO 84487 --- [    Test worker] touch.baton.BatonApplicationTests        : Starting BatonApplicationTests using Java 17.0.7 with PID 84487 (started by seokho in /Users/seokho/Desktop/Woowahan/LEVEL3/2023-baton/backend/baton)
-2023-07-19T18:28:05.724+09:00  INFO 84487 --- [    Test worker] touch.baton.BatonApplicationTests        : No active profile set, falling back to 1 default profile: "default"
-2023-07-19T18:28:06.080+09:00  INFO 84487 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-07-19T18:28:06.109+09:00  INFO 84487 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 5 JPA repository interfaces.
-2023-07-19T18:28:06.293+09:00  INFO 84487 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-07-19T18:28:06.314+09:00  INFO 84487 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
-2023-07-19T18:28:06.315+09:00  INFO 84487 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-07-19T18:28:06.365+09:00  INFO 84487 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-07-19T18:28:06.420+09:00  INFO 84487 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-07-19T18:28:06.427+09:00  INFO 84487 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-07-19T18:28:06.518+09:00  INFO 84487 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:d970f6d7-c581-4654-a813-a13861d0b0bb user=SA
-2023-07-19T18:28:06.519+09:00  INFO 84487 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-07-19T18:28:06.649+09:00  INFO 84487 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-07-19T18:28:06.963+09:00  INFO 84487 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-07-19T18:28:06.969+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:33.289+09:00  INFO 26299 --- [    Test worker] touch.baton.BatonApplicationTests        : Starting BatonApplicationTests using Java 17.0.8 with PID 26299 (started by seokho in /Users/seokho/Desktop/github-actions-playground/baton)
+2023-07-30T14:45:33.290+09:00  INFO 26299 --- [    Test worker] touch.baton.BatonApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-07-30T14:45:33.657+09:00  INFO 26299 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-30T14:45:33.689+09:00  INFO 26299 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 6 JPA repository interfaces.
+2023-07-30T14:45:33.879+09:00  INFO 26299 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-30T14:45:33.904+09:00  INFO 26299 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-30T14:45:33.905+09:00  INFO 26299 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-30T14:45:33.964+09:00  INFO 26299 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-30T14:45:34.018+09:00  INFO 26299 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-30T14:45:34.026+09:00  INFO 26299 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-30T14:45:34.105+09:00  INFO 26299 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:9c46a709-2c16-483a-bf2e-1eb37d731204 user=SA
+2023-07-30T14:45:34.106+09:00  INFO 26299 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-30T14:45:34.256+09:00  INFO 26299 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-30T14:45:34.591+09:00  INFO 26299 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-30T14:45:34.597+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     drop table if exists member cascade 
-2023-07-19T18:28:06.971+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:34.599+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     drop table if exists runner cascade 
-2023-07-19T18:28:06.971+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:34.599+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     drop table if exists runner_post cascade 
-2023-07-19T18:28:06.971+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:34.599+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     drop table if exists runner_post_tag cascade 
-2023-07-19T18:28:06.971+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:34.599+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     drop table if exists supporter cascade 
-2023-07-19T18:28:06.971+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:34.599+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     drop table if exists tag cascade 
-2023-07-19T18:28:06.973+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:34.601+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     create table member (
         created_at timestamp(6) not null,
         deleted_at timestamp(6),
@@ -48,11 +48,12 @@
         company varchar(255) not null,
         email varchar(255) not null,
         github_url varchar(255) not null,
+        image_url varchar(255) not null,
         name varchar(255) not null,
         oauth_id varchar(255) not null,
         primary key (id)
     )
-2023-07-19T18:28:06.977+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:34.606+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     create table runner (
         total_rating integer default 0 not null,
         created_at timestamp(6) not null,
@@ -63,7 +64,7 @@
         grade varchar(255) check (grade in ('BARE_FOOT')),
         primary key (id)
     )
-2023-07-19T18:28:06.980+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:34.609+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     create table runner_post (
         chatting_room_count integer default 0 not null,
         watch_count integer default 0 not null,
@@ -79,14 +80,14 @@
         title varchar(255) not null,
         primary key (id)
     )
-2023-07-19T18:28:06.981+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:34.610+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     create table runner_post_tag (
         id bigint generated by default as identity,
         runner_post_id bigint not null,
         tag_id bigint not null,
         primary key (id)
     )
-2023-07-19T18:28:06.982+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:34.610+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     create table supporter (
         review_count integer default 0,
         star_count integer default 0 not null,
@@ -99,48 +100,48 @@
         grade varchar(255) check (grade in ('BARE_FOOT')),
         primary key (id)
     )
-2023-07-19T18:28:06.983+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:34.612+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     create table tag (
         tag_count integer default 1 not null,
         id bigint generated by default as identity,
         name varchar(255) not null unique,
         primary key (id)
     )
-2023-07-19T18:28:06.984+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:34.613+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     alter table if exists runner 
        add constraint fk_runner_member 
        foreign key (member_id) 
        references member
-2023-07-19T18:28:06.987+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:34.619+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     alter table if exists runner_post 
        add constraint fk_runner_post_runner 
        foreign key (runner_id) 
        references runner
-2023-07-19T18:28:06.988+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:34.621+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     alter table if exists runner_post 
        add constraint fk_runner_post_supporter 
        foreign key (supporter_id) 
        references supporter
-2023-07-19T18:28:06.991+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:34.624+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     alter table if exists runner_post_tag 
        add constraint FKdxuwha2wuo61hv7e9h0g2hd9c 
        foreign key (runner_post_id) 
        references runner_post
-2023-07-19T18:28:06.992+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:34.625+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     alter table if exists runner_post_tag 
        add constraint FKg31ppfu66xpw9cwq7j44kgsfb 
        foreign key (tag_id) 
        references tag
-2023-07-19T18:28:06.994+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:34.626+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     alter table if exists supporter 
        add constraint fk_supporter_member 
        foreign key (member_id) 
        references member
-2023-07-19T18:28:06.996+09:00  INFO 84487 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-07-19T18:28:07.140+09:00  INFO 84487 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2023-07-19T18:28:07.436+09:00  WARN 84487 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-07-19T18:28:07.570+09:00  WARN 84487 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2023-07-19T18:28:07.627+09:00  INFO 84487 --- [    Test worker] touch.baton.BatonApplicationTests        : Started BatonApplicationTests in 2.013 seconds (process running for 2.543)
+2023-07-30T14:45:34.631+09:00  INFO 26299 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-30T14:45:34.741+09:00  INFO 26299 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-30T14:45:35.082+09:00  WARN 26299 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-30T14:45:35.222+09:00  WARN 26299 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-07-30T14:45:35.291+09:00  INFO 26299 --- [    Test worker] touch.baton.BatonApplicationTests        : Started BatonApplicationTests in 2.122 seconds (process running for 2.717)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

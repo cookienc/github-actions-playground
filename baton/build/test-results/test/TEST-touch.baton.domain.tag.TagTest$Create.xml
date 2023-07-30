@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="생성 테스트" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-07-19T09:28:09" hostname="seokho-MacBookAir.local" time="0.002">
+<testsuite name="생성 테스트" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-07-30T05:45:39" hostname="seokho-MacBookAir.local" time="0.006">
   <properties/>
-  <testcase name="성공한다." classname="touch.baton.domain.tag.TagTest$Create" time="0.001"/>
-  <testcase name="tag count 가 null 이 들어갈 경우 예외가 발생한다." classname="touch.baton.domain.tag.TagTest$Create" time="0.001"/>
-  <testcase name="tag name 이 null 이 들어갈 경우 예외가 발생한다." classname="touch.baton.domain.tag.TagTest$Create" time="0.0"/>
+  <testcase name="성공한다." classname="touch.baton.domain.tag.TagTest$Create" time="0.0"/>
+  <testcase name="tag count 가 null 이 들어갈 경우 예외가 발생한다." classname="touch.baton.domain.tag.TagTest$Create" time="0.0"/>
+  <testcase name="tag name 이 null 이 들어갈 경우 예외가 발생한다." classname="touch.baton.domain.tag.TagTest$Create" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

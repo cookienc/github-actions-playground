@@ -1,179 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="touch.baton.domain.runnerpost.controller.RunnerPostControllerCreateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-19T09:28:08" hostname="seokho-MacBookAir.local" time="0.586">
+<testsuite name="touch.baton.domain.runnerpost.controller.RunnerPostControllerCreateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-30T05:45:37" hostname="seokho-MacBookAir.local" time="0.085">
   <properties/>
-  <testcase name="러너_게시글_등록에_성공한다()" classname="touch.baton.domain.runnerpost.controller.RunnerPostControllerCreateTest" time="0.586"/>
-  <system-out><![CDATA[2023-07-19T18:28:08.341+09:00  INFO 84487 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [touch.baton.domain.runnerpost.controller.RunnerPostControllerCreateTest]: RunnerPostControllerCreateTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-07-19T18:28:08.348+09:00  INFO 84487 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration touch.baton.BatonApplication for test class touch.baton.domain.runnerpost.controller.RunnerPostControllerCreateTest
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v3.1.1)
-
-2023-07-19T18:28:08.361+09:00  INFO 84487 --- [    Test worker] t.b.d.r.c.RunnerPostControllerCreateTest : Starting RunnerPostControllerCreateTest using Java 17.0.7 with PID 84487 (started by seokho in /Users/seokho/Desktop/Woowahan/LEVEL3/2023-baton/backend/baton)
-2023-07-19T18:28:08.361+09:00  INFO 84487 --- [    Test worker] t.b.d.r.c.RunnerPostControllerCreateTest : No active profile set, falling back to 1 default profile: "default"
-2023-07-19T18:28:08.426+09:00  INFO 84487 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-07-19T18:28:08.435+09:00  INFO 84487 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 5 JPA repository interfaces.
-2023-07-19T18:28:08.519+09:00  INFO 84487 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-07-19T18:28:08.524+09:00  INFO 84487 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-19T18:28:08.524+09:00  INFO 84487 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-19T18:28:08.574+09:00  INFO 84487 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-19T18:28:08.575+09:00  INFO 84487 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 212 ms
-2023-07-19T18:28:08.614+09:00  INFO 84487 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-07-19T18:28:08.616+09:00  INFO 84487 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-07-19T18:28:08.616+09:00  INFO 84487 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-07-19T18:28:08.617+09:00  INFO 84487 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2023-07-19T18:28:08.618+09:00  INFO 84487 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn18: url=jdbc:h2:mem:529babb8-ce05-4192-bc5d-afc26aa6e753 user=SA
-2023-07-19T18:28:08.618+09:00  INFO 84487 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2023-07-19T18:28:08.630+09:00  INFO 84487 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-07-19T18:28:08.665+09:00  INFO 84487 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-07-19T18:28:08.665+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
-    drop table if exists member cascade 
-2023-07-19T18:28:08.666+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
-    drop table if exists runner cascade 
-2023-07-19T18:28:08.666+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
-    drop table if exists runner_post cascade 
-2023-07-19T18:28:08.666+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
-    drop table if exists runner_post_tag cascade 
-2023-07-19T18:28:08.666+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
-    drop table if exists supporter cascade 
-2023-07-19T18:28:08.666+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
-    drop table if exists tag cascade 
-2023-07-19T18:28:08.666+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
-    create table member (
-        created_at timestamp(6) not null,
-        deleted_at timestamp(6),
-        id bigint generated by default as identity,
-        updated_at timestamp(6) not null,
-        company varchar(255) not null,
-        email varchar(255) not null,
-        github_url varchar(255) not null,
-        name varchar(255) not null,
-        oauth_id varchar(255) not null,
-        primary key (id)
-    )
-2023-07-19T18:28:08.667+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
-    create table runner (
-        total_rating integer default 0 not null,
-        created_at timestamp(6) not null,
-        deleted_at timestamp(6),
-        id bigint generated by default as identity,
-        member_id bigint not null unique,
-        updated_at timestamp(6) not null,
-        grade varchar(255) check (grade in ('BARE_FOOT')),
-        primary key (id)
-    )
-2023-07-19T18:28:08.668+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
-    create table runner_post (
-        chatting_room_count integer default 0 not null,
-        watch_count integer default 0 not null,
-        created_at timestamp(6) not null,
-        deadline timestamp(6) not null,
-        deleted_at timestamp(6),
-        id bigint generated by default as identity,
-        runner_id bigint not null,
-        supporter_id bigint unique,
-        updated_at timestamp(6) not null,
-        pull_request_url varchar(2083) not null,
-        contents TEXT not null,
-        title varchar(255) not null,
-        primary key (id)
-    )
-2023-07-19T18:28:08.668+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
-    create table runner_post_tag (
-        id bigint generated by default as identity,
-        runner_post_id bigint not null,
-        tag_id bigint not null,
-        primary key (id)
-    )
-2023-07-19T18:28:08.669+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
-    create table supporter (
-        review_count integer default 0,
-        star_count integer default 0 not null,
-        total_rating integer default 0 not null,
-        created_at timestamp(6) not null,
-        deleted_at timestamp(6),
-        id bigint generated by default as identity,
-        member_id bigint not null unique,
-        updated_at timestamp(6) not null,
-        grade varchar(255) check (grade in ('BARE_FOOT')),
-        primary key (id)
-    )
-2023-07-19T18:28:08.669+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
-    create table tag (
-        tag_count integer default 1 not null,
-        id bigint generated by default as identity,
-        name varchar(255) not null unique,
-        primary key (id)
-    )
-2023-07-19T18:28:08.670+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
-    alter table if exists runner 
-       add constraint fk_runner_member 
-       foreign key (member_id) 
-       references member
-2023-07-19T18:28:08.670+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
-    alter table if exists runner_post 
-       add constraint fk_runner_post_runner 
-       foreign key (runner_id) 
-       references runner
-2023-07-19T18:28:08.671+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
-    alter table if exists runner_post 
-       add constraint fk_runner_post_supporter 
-       foreign key (supporter_id) 
-       references supporter
-2023-07-19T18:28:08.671+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
-    alter table if exists runner_post_tag 
-       add constraint FKdxuwha2wuo61hv7e9h0g2hd9c 
-       foreign key (runner_post_id) 
-       references runner_post
-2023-07-19T18:28:08.672+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
-    alter table if exists runner_post_tag 
-       add constraint FKg31ppfu66xpw9cwq7j44kgsfb 
-       foreign key (tag_id) 
-       references tag
-2023-07-19T18:28:08.672+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
-    alter table if exists supporter 
-       add constraint fk_supporter_member 
-       foreign key (member_id) 
-       references member
-2023-07-19T18:28:08.673+09:00  INFO 84487 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-07-19T18:28:08.730+09:00  WARN 84487 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-07-19T18:28:08.769+09:00  WARN 84487 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2023-07-19T18:28:08.813+09:00  INFO 84487 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 51633 (http) with context path ''
-2023-07-19T18:28:08.815+09:00  INFO 84487 --- [    Test worker] t.b.d.r.c.RunnerPostControllerCreateTest : Started RunnerPostControllerCreateTest in 0.464 seconds (process running for 3.73)
-2023-07-19T18:28:08.873+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+  <testcase name="러너_게시글_등록에_성공한다()" classname="touch.baton.domain.runnerpost.controller.RunnerPostControllerCreateTest" time="0.085"/>
+  <system-out><![CDATA[2023-07-30T14:45:37.415+09:00  INFO 26299 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [touch.baton.domain.runnerpost.controller.RunnerPostControllerCreateTest]: RunnerPostControllerCreateTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-07-30T14:45:37.427+09:00  INFO 26299 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration touch.baton.BatonApplication for test class touch.baton.domain.runnerpost.controller.RunnerPostControllerCreateTest
+2023-07-30T14:45:37.434+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     insert 
     into
         member
-        (company,created_at,deleted_at,email,github_url,name,oauth_id,updated_at,id) 
+        (company,created_at,deleted_at,email,github_url,image_url,name,oauth_id,updated_at,id) 
     values
-        (?,?,?,?,?,?,?,?,default)
-2023-07-19T18:28:08.874+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [우아한형제들]
-2023-07-19T18:28:08.874+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [TIMESTAMP] - [2023-07-19T18:28:08.871710]
-2023-07-19T18:28:08.874+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [TIMESTAMP] - [null]
-2023-07-19T18:28:08.874+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [VARCHAR] - [test@test.co.kr]
-2023-07-19T18:28:08.874+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [VARCHAR] - [github.com/hyena0608]
-2023-07-19T18:28:08.874+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [VARCHAR] - [헤에디주]
-2023-07-19T18:28:08.874+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [7] as [VARCHAR] - [dsigjh98gh230gn2oinv913bcuo23nqovbvu93b12voi3bc31j]
-2023-07-19T18:28:08.874+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [8] as [TIMESTAMP] - [2023-07-19T18:28:08.871710]
-2023-07-19T18:28:08.880+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+        (?,?,?,?,?,?,?,?,?,default)
+2023-07-30T14:45:37.434+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [우아한형제들]
+2023-07-30T14:45:37.434+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [TIMESTAMP] - [2023-07-30T14:45:37.434233]
+2023-07-30T14:45:37.434+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [TIMESTAMP] - [null]
+2023-07-30T14:45:37.434+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [VARCHAR] - [test@test.co.kr]
+2023-07-30T14:45:37.434+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [VARCHAR] - [github.com/hyena0608]
+2023-07-30T14:45:37.434+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [VARCHAR] - [홍혁준]
+2023-07-30T14:45:37.434+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [7] as [VARCHAR] - [헤에디주]
+2023-07-30T14:45:37.434+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [8] as [VARCHAR] - [dsigjh98gh230gn2oinv913bcuo23nqovbvu93b12voi3bc31j]
+2023-07-30T14:45:37.434+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [9] as [TIMESTAMP] - [2023-07-30T14:45:37.434233]
+2023-07-30T14:45:37.435+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     insert 
     into
         runner
         (created_at,deleted_at,grade,member_id,total_rating,updated_at,id) 
     values
         (?,?,?,?,?,?,default)
-2023-07-19T18:28:08.880+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [TIMESTAMP] - [2023-07-19T18:28:08.878798]
-2023-07-19T18:28:08.880+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [TIMESTAMP] - [null]
-2023-07-19T18:28:08.880+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [VARCHAR] - [BARE_FOOT]
-2023-07-19T18:28:08.880+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [BIGINT] - [1]
-2023-07-19T18:28:08.880+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [INTEGER] - [100]
-2023-07-19T18:28:08.880+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [TIMESTAMP] - [2023-07-19T18:28:08.878798]
+2023-07-30T14:45:37.435+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [TIMESTAMP] - [2023-07-30T14:45:37.435631]
+2023-07-30T14:45:37.436+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [TIMESTAMP] - [null]
+2023-07-30T14:45:37.436+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [VARCHAR] - [BARE_FOOT]
+2023-07-30T14:45:37.436+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [BIGINT] - [3]
+2023-07-30T14:45:37.436+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [INTEGER] - [100]
+2023-07-30T14:45:37.436+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [TIMESTAMP] - [2023-07-30T14:45:37.435631]
 Request method:	POST
-Request URI:	http://localhost:51633/api/v1/posts/runner
+Request URI:	http://localhost:59826/api/v1/posts/runner
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -194,10 +55,7 @@ Body:
     "deadline": "2099-12-12T00:00",
     "contents": "싸게 부탁드려요."
 }
-2023-07-19T18:28:09.311+09:00  INFO 84487 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-07-19T18:28:09.312+09:00  INFO 84487 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-07-19T18:28:09.313+09:00  INFO 84487 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-07-19T18:28:09.351+09:00 DEBUG 84487 --- [o-auto-1-exec-1] org.hibernate.SQL                        : 
+2023-07-30T14:45:37.491+09:00 DEBUG 26299 --- [o-auto-1-exec-4] org.hibernate.SQL                        : 
     select
         r1_0.id,
         r1_0.created_at,
@@ -213,85 +71,85 @@ Body:
             on m1_0.id=r1_0.member_id 
     where
         r1_0.id=?
-2023-07-19T18:28:09.352+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [BIGINT] - [1]
-2023-07-19T18:28:09.362+09:00 DEBUG 84487 --- [o-auto-1-exec-1] org.hibernate.SQL                        : 
-    select
-        t1_0.id,
-        t1_0.tag_count,
-        t1_0.name 
-    from
-        tag t1_0 
-    where
-        t1_0.name=?
-2023-07-19T18:28:09.363+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [Java]
-2023-07-19T18:28:09.364+09:00 DEBUG 84487 --- [o-auto-1-exec-1] org.hibernate.SQL                        : 
-    insert 
-    into
-        tag
-        (tag_count,name,id) 
-    values
-        (?,?,default)
-2023-07-19T18:28:09.364+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [INTEGER] - [1]
-2023-07-19T18:28:09.364+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [VARCHAR] - [Java]
-2023-07-19T18:28:09.365+09:00 DEBUG 84487 --- [o-auto-1-exec-1] org.hibernate.SQL                        : 
-    select
-        t1_0.id,
-        t1_0.tag_count,
-        t1_0.name 
-    from
-        tag t1_0 
-    where
-        t1_0.name=?
-2023-07-19T18:28:09.365+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [Spring]
-2023-07-19T18:28:09.366+09:00 DEBUG 84487 --- [o-auto-1-exec-1] org.hibernate.SQL                        : 
-    insert 
-    into
-        tag
-        (tag_count,name,id) 
-    values
-        (?,?,default)
-2023-07-19T18:28:09.366+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [INTEGER] - [1]
-2023-07-19T18:28:09.366+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [VARCHAR] - [Spring]
-2023-07-19T18:28:09.372+09:00 DEBUG 84487 --- [o-auto-1-exec-1] org.hibernate.SQL                        : 
+2023-07-30T14:45:37.491+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [BIGINT] - [1]
+2023-07-30T14:45:37.493+09:00 DEBUG 26299 --- [o-auto-1-exec-4] org.hibernate.SQL                        : 
     insert 
     into
         runner_post
         (chatting_room_count,contents,created_at,deadline,deleted_at,pull_request_url,runner_id,supporter_id,title,updated_at,watch_count,id) 
     values
         (?,?,?,?,?,?,?,?,?,?,?,default)
-2023-07-19T18:28:09.372+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [INTEGER] - [0]
-2023-07-19T18:28:09.372+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [VARCHAR] - [싸게 부탁드려요.]
-2023-07-19T18:28:09.372+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [TIMESTAMP] - [2023-07-19T18:28:09.367663]
-2023-07-19T18:28:09.372+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [TIMESTAMP] - [2099-12-12T00:00]
-2023-07-19T18:28:09.372+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [TIMESTAMP] - [null]
-2023-07-19T18:28:09.372+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [VARCHAR] - [https://github.com/cookienc]
-2023-07-19T18:28:09.373+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [7] as [BIGINT] - [1]
-2023-07-19T18:28:09.373+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [8] as [BIGINT] - [null]
-2023-07-19T18:28:09.373+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [9] as [VARCHAR] - [코드 리뷰 해주세요.]
-2023-07-19T18:28:09.373+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [10] as [TIMESTAMP] - [2023-07-19T18:28:09.367663]
-2023-07-19T18:28:09.373+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [11] as [INTEGER] - [0]
-2023-07-19T18:28:09.374+09:00 DEBUG 84487 --- [o-auto-1-exec-1] org.hibernate.SQL                        : 
+2023-07-30T14:45:37.493+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [INTEGER] - [0]
+2023-07-30T14:45:37.493+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [VARCHAR] - [싸게 부탁드려요.]
+2023-07-30T14:45:37.493+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [TIMESTAMP] - [2023-07-30T14:45:37.492970]
+2023-07-30T14:45:37.493+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [TIMESTAMP] - [2099-12-12T00:00]
+2023-07-30T14:45:37.493+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [TIMESTAMP] - [null]
+2023-07-30T14:45:37.493+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [VARCHAR] - [https://github.com/cookienc]
+2023-07-30T14:45:37.493+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [7] as [BIGINT] - [1]
+2023-07-30T14:45:37.493+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [8] as [BIGINT] - [null]
+2023-07-30T14:45:37.493+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [9] as [VARCHAR] - [코드 리뷰 해주세요.]
+2023-07-30T14:45:37.494+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [10] as [TIMESTAMP] - [2023-07-30T14:45:37.492970]
+2023-07-30T14:45:37.494+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [11] as [INTEGER] - [0]
+2023-07-30T14:45:37.500+09:00 DEBUG 26299 --- [o-auto-1-exec-4] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.tag_count,
+        t1_0.name 
+    from
+        tag t1_0 
+    where
+        t1_0.name=?
+2023-07-30T14:45:37.501+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [Java]
+2023-07-30T14:45:37.501+09:00 DEBUG 26299 --- [o-auto-1-exec-4] org.hibernate.SQL                        : 
+    insert 
+    into
+        tag
+        (tag_count,name,id) 
+    values
+        (?,?,default)
+2023-07-30T14:45:37.502+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [INTEGER] - [1]
+2023-07-30T14:45:37.502+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [VARCHAR] - [Java]
+2023-07-30T14:45:37.503+09:00 DEBUG 26299 --- [o-auto-1-exec-4] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.tag_count,
+        t1_0.name 
+    from
+        tag t1_0 
+    where
+        t1_0.name=?
+2023-07-30T14:45:37.503+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [Spring]
+2023-07-30T14:45:37.503+09:00 DEBUG 26299 --- [o-auto-1-exec-4] org.hibernate.SQL                        : 
+    insert 
+    into
+        tag
+        (tag_count,name,id) 
+    values
+        (?,?,default)
+2023-07-30T14:45:37.503+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [INTEGER] - [1]
+2023-07-30T14:45:37.504+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [VARCHAR] - [Spring]
+2023-07-30T14:45:37.505+09:00 DEBUG 26299 --- [o-auto-1-exec-4] org.hibernate.SQL                        : 
     insert 
     into
         runner_post_tag
         (runner_post_id,tag_id,id) 
     values
         (?,?,default)
-2023-07-19T18:28:09.374+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [BIGINT] - [1]
-2023-07-19T18:28:09.374+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [BIGINT] - [1]
-2023-07-19T18:28:09.375+09:00 DEBUG 84487 --- [o-auto-1-exec-1] org.hibernate.SQL                        : 
+2023-07-30T14:45:37.505+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [BIGINT] - [3]
+2023-07-30T14:45:37.505+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [BIGINT] - [1]
+2023-07-30T14:45:37.506+09:00 DEBUG 26299 --- [o-auto-1-exec-4] org.hibernate.SQL                        : 
     insert 
     into
         runner_post_tag
         (runner_post_id,tag_id,id) 
     values
         (?,?,default)
-2023-07-19T18:28:09.375+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [BIGINT] - [1]
-2023-07-19T18:28:09.375+09:00 TRACE 84487 --- [o-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [BIGINT] - [2]
+2023-07-30T14:45:37.506+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [BIGINT] - [3]
+2023-07-30T14:45:37.506+09:00 TRACE 26299 --- [o-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [BIGINT] - [2]
 HTTP/1.1 201 
-Location: /api/v1/posts/runner/1
+Location: /api/v1/posts/runner/3
 Content-Length: 0
-Date: Wed, 19 Jul 2023 09:28:09 GMT
+Date: Sun, 30 Jul 2023 05:45:36 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 ]]></system-out>

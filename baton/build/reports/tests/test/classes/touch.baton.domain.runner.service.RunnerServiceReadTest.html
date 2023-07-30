@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.015s</div>
+<div class="counter">0.016s</div>
 <p>duration</p>
 </div>
 </td>
@@ -81,13 +81,13 @@
 <tr>
 <td class="success">식별자로 Runner 와 Member 를 조인해서 조회할 때, 식별자에 해당하는 데이터가 없으면 예외를 던진다.</td>
 <td class="success">fail_readRunnerWithMember_if_id_is_invalid()</td>
-<td class="success">0.008s</td>
+<td class="success">0.006s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Runner 를 Member 와 조인해서 조회할 수 있다.</td>
 <td class="success">success_readRunnerWithMember()</td>
-<td class="success">0.007s</td>
+<td class="success">0.010s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -95,31 +95,32 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2023-07-19T18:28:08.301+09:00  INFO 84487 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [touch.baton.domain.runner.service.RunnerServiceReadTest]: RunnerServiceReadTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-07-19T18:28:08.310+09:00  INFO 84487 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration touch.baton.BatonApplication for test class touch.baton.domain.runner.service.RunnerServiceReadTest
-2023-07-19T18:28:08.313+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+<pre>2023-07-30T14:45:37.376+09:00  INFO 26299 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [touch.baton.domain.runner.service.RunnerServiceReadTest]: RunnerServiceReadTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-07-30T14:45:37.387+09:00  INFO 26299 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration touch.baton.BatonApplication for test class touch.baton.domain.runner.service.RunnerServiceReadTest
+2023-07-30T14:45:37.390+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     insert 
     into
         member
-        (company,created_at,deleted_at,email,github_url,name,oauth_id,updated_at,id) 
+        (company,created_at,deleted_at,email,github_url,image_url,name,oauth_id,updated_at,id) 
     values
-        (?,?,?,?,?,?,?,?,default)
+        (?,?,?,?,?,?,?,?,?,default)
 Hibernate: 
     insert 
     into
         member
-        (company,created_at,deleted_at,email,github_url,name,oauth_id,updated_at,id) 
+        (company,created_at,deleted_at,email,github_url,image_url,name,oauth_id,updated_at,id) 
     values
-        (?,?,?,?,?,?,?,?,default)
-2023-07-19T18:28:08.313+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [우아한형제들]
-2023-07-19T18:28:08.313+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [TIMESTAMP] - [2023-07-19T18:28:08.313184]
-2023-07-19T18:28:08.314+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [TIMESTAMP] - [null]
-2023-07-19T18:28:08.314+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [VARCHAR] - [test@test.co.kr]
-2023-07-19T18:28:08.314+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [VARCHAR] - [github.com/hyena0608]
-2023-07-19T18:28:08.314+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [VARCHAR] - [헤에디주]
-2023-07-19T18:28:08.314+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [7] as [VARCHAR] - [dsigjh98gh230gn2oinv913bcuo23nqovbvu93b12voi3bc31j]
-2023-07-19T18:28:08.314+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [8] as [TIMESTAMP] - [2023-07-19T18:28:08.313184]
-2023-07-19T18:28:08.315+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+        (?,?,?,?,?,?,?,?,?,default)
+2023-07-30T14:45:37.390+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [우아한형제들]
+2023-07-30T14:45:37.390+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [TIMESTAMP] - [2023-07-30T14:45:37.390071]
+2023-07-30T14:45:37.390+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [TIMESTAMP] - [null]
+2023-07-30T14:45:37.390+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [VARCHAR] - [test@test.co.kr]
+2023-07-30T14:45:37.390+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [VARCHAR] - [github.com/hyena0608]
+2023-07-30T14:45:37.390+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [VARCHAR] - [홍혁준]
+2023-07-30T14:45:37.390+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [7] as [VARCHAR] - [헤에디주]
+2023-07-30T14:45:37.390+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [8] as [VARCHAR] - [dsigjh98gh230gn2oinv913bcuo23nqovbvu93b12voi3bc31j]
+2023-07-30T14:45:37.390+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [9] as [TIMESTAMP] - [2023-07-30T14:45:37.390071]
+2023-07-30T14:45:37.391+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     insert 
     into
         runner
@@ -133,13 +134,13 @@ Hibernate:
         (created_at,deleted_at,grade,member_id,total_rating,updated_at,id) 
     values
         (?,?,?,?,?,?,default)
-2023-07-19T18:28:08.316+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [TIMESTAMP] - [2023-07-19T18:28:08.315545]
-2023-07-19T18:28:08.316+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [TIMESTAMP] - [null]
-2023-07-19T18:28:08.316+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [VARCHAR] - [BARE_FOOT]
-2023-07-19T18:28:08.316+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [BIGINT] - [3]
-2023-07-19T18:28:08.316+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [INTEGER] - [100]
-2023-07-19T18:28:08.316+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [TIMESTAMP] - [2023-07-19T18:28:08.315545]
-2023-07-19T18:28:08.318+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:37.391+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [TIMESTAMP] - [2023-07-30T14:45:37.391553]
+2023-07-30T14:45:37.391+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [TIMESTAMP] - [null]
+2023-07-30T14:45:37.391+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [VARCHAR] - [BARE_FOOT]
+2023-07-30T14:45:37.391+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [BIGINT] - [3]
+2023-07-30T14:45:37.391+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [INTEGER] - [100]
+2023-07-30T14:45:37.391+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [TIMESTAMP] - [2023-07-30T14:45:37.391553]
+2023-07-30T14:45:37.393+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     select
         r1_0.id,
         r1_0.created_at,
@@ -171,30 +172,31 @@ Hibernate:
             on m1_0.id=r1_0.member_id 
     where
         r1_0.id=?
-2023-07-19T18:28:08.318+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [BIGINT] - [999]
-2023-07-19T18:28:08.322+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:37.393+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [BIGINT] - [999]
+2023-07-30T14:45:37.397+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     insert 
     into
         member
-        (company,created_at,deleted_at,email,github_url,name,oauth_id,updated_at,id) 
+        (company,created_at,deleted_at,email,github_url,image_url,name,oauth_id,updated_at,id) 
     values
-        (?,?,?,?,?,?,?,?,default)
+        (?,?,?,?,?,?,?,?,?,default)
 Hibernate: 
     insert 
     into
         member
-        (company,created_at,deleted_at,email,github_url,name,oauth_id,updated_at,id) 
+        (company,created_at,deleted_at,email,github_url,image_url,name,oauth_id,updated_at,id) 
     values
-        (?,?,?,?,?,?,?,?,default)
-2023-07-19T18:28:08.322+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [우아한형제들]
-2023-07-19T18:28:08.322+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [TIMESTAMP] - [2023-07-19T18:28:08.322141]
-2023-07-19T18:28:08.322+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [TIMESTAMP] - [null]
-2023-07-19T18:28:08.322+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [VARCHAR] - [test@test.co.kr]
-2023-07-19T18:28:08.322+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [VARCHAR] - [github.com/hyena0608]
-2023-07-19T18:28:08.322+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [VARCHAR] - [헤에디주]
-2023-07-19T18:28:08.323+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [7] as [VARCHAR] - [dsigjh98gh230gn2oinv913bcuo23nqovbvu93b12voi3bc31j]
-2023-07-19T18:28:08.323+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [8] as [TIMESTAMP] - [2023-07-19T18:28:08.322141]
-2023-07-19T18:28:08.324+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+        (?,?,?,?,?,?,?,?,?,default)
+2023-07-30T14:45:37.397+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [우아한형제들]
+2023-07-30T14:45:37.397+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [TIMESTAMP] - [2023-07-30T14:45:37.397015]
+2023-07-30T14:45:37.398+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [TIMESTAMP] - [null]
+2023-07-30T14:45:37.398+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [VARCHAR] - [test@test.co.kr]
+2023-07-30T14:45:37.398+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [VARCHAR] - [github.com/hyena0608]
+2023-07-30T14:45:37.398+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [VARCHAR] - [홍혁준]
+2023-07-30T14:45:37.398+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [7] as [VARCHAR] - [헤에디주]
+2023-07-30T14:45:37.398+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [8] as [VARCHAR] - [dsigjh98gh230gn2oinv913bcuo23nqovbvu93b12voi3bc31j]
+2023-07-30T14:45:37.398+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [9] as [TIMESTAMP] - [2023-07-30T14:45:37.397015]
+2023-07-30T14:45:37.400+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     insert 
     into
         runner
@@ -208,13 +210,13 @@ Hibernate:
         (created_at,deleted_at,grade,member_id,total_rating,updated_at,id) 
     values
         (?,?,?,?,?,?,default)
-2023-07-19T18:28:08.324+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [TIMESTAMP] - [2023-07-19T18:28:08.324057]
-2023-07-19T18:28:08.324+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [TIMESTAMP] - [null]
-2023-07-19T18:28:08.324+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [VARCHAR] - [BARE_FOOT]
-2023-07-19T18:28:08.324+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [BIGINT] - [4]
-2023-07-19T18:28:08.324+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [INTEGER] - [100]
-2023-07-19T18:28:08.324+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [TIMESTAMP] - [2023-07-19T18:28:08.324057]
-2023-07-19T18:28:08.325+09:00 DEBUG 84487 --- [    Test worker] org.hibernate.SQL                        : 
+2023-07-30T14:45:37.400+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [TIMESTAMP] - [2023-07-30T14:45:37.399749]
+2023-07-30T14:45:37.400+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [TIMESTAMP] - [null]
+2023-07-30T14:45:37.400+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [VARCHAR] - [BARE_FOOT]
+2023-07-30T14:45:37.400+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [BIGINT] - [4]
+2023-07-30T14:45:37.400+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [INTEGER] - [100]
+2023-07-30T14:45:37.400+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [TIMESTAMP] - [2023-07-30T14:45:37.399749]
+2023-07-30T14:45:37.402+09:00 DEBUG 26299 --- [    Test worker] org.hibernate.SQL                        : 
     select
         r1_0.id,
         r1_0.created_at,
@@ -246,7 +248,7 @@ Hibernate:
             on m1_0.id=r1_0.member_id 
     where
         r1_0.id=?
-2023-07-19T18:28:08.326+09:00 TRACE 84487 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [BIGINT] - [3]
+2023-07-30T14:45:37.403+09:00 TRACE 26299 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [BIGINT] - [3]
 </pre>
 </span>
 </div>
@@ -258,7 +260,7 @@ Hibernate:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.0</a> at Jul 19, 2023, 6:28:09 PM</p>
+<a href="http://www.gradle.org">Gradle 8.0</a> at Jul 30, 2023, 2:45:39 PM</p>
 </div>
 </div>
 </body>
