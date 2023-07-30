@@ -42,5 +42,10 @@ jobs:
       - name: Run Spring boot
         run: |
           ls
-          cd baton/build/libs
+          cd baton
+          ls
+          cd build
+          ls
+          cd libs
+          ls
           nohup java -jar baton-0.0.1-SNAPSHOT.jar &
