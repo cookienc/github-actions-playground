@@ -11,15 +11,15 @@ public abstract class BaseException extends RuntimeException {
     }
 
     @Override
-    public String getMessaasdfge() {
+    public String getMessage() {
         return errorCode.getMessage();
     }
 
-    public String getErrorCodesdfa() {
+    public String getErrorCode() {
         return errorCode.getErrorCode();
     }
 
-    public HttpStatus getHttpStatusadfdfa() {
+    public HttpStatus getHttpStatus() {
         return errorCode.getHttpStatus();
     }
 }

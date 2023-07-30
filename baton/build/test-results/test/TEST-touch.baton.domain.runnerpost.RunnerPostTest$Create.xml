@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="생성 테스트" tests="11" skipped="0" failures="0" errors="0" timestamp="2023-07-19T09:28:08" hostname="seokho-MacBookAir.local" time="0.005">
+<testsuite name="생성 테스트" tests="11" skipped="0" failures="0" errors="0" timestamp="2023-07-30T05:49:28" hostname="seokho-MacBookAir.local" time="0.004">
   <properties/>
   <testcase name="성공한다." classname="touch.baton.domain.runnerpost.RunnerPostTest$Create" time="0.0"/>
-  <testcase name="watched count 에 null 이 들어갈 경우 예외가 발생한다." classname="touch.baton.domain.runnerpost.RunnerPostTest$Create" time="0.001"/>
-  <testcase name="runnerPostTags 에 null 이 들어갈 경우 예외가 발생한다." classname="touch.baton.domain.runnerpost.RunnerPostTest$Create" time="0.0"/>
-  <testcase name="태그, 조회수, 채팅수가 초기화된 RunnerPost 를 생성할 수 있다." classname="touch.baton.domain.runnerpost.RunnerPostTest$Create" time="0.001"/>
-  <testcase name="runner 에 null 이 들어갈 경우 예외가 발생한다." classname="touch.baton.domain.runnerpost.RunnerPostTest$Create" time="0.0"/>
+  <testcase name="watched count 에 null 이 들어갈 경우 예외가 발생한다." classname="touch.baton.domain.runnerpost.RunnerPostTest$Create" time="0.0"/>
+  <testcase name="runnerPostTags 에 null 이 들어갈 경우 예외가 발생한다." classname="touch.baton.domain.runnerpost.RunnerPostTest$Create" time="0.001"/>
+  <testcase name="태그, 조회수, 채팅수가 초기화된 RunnerPost 를 생성할 수 있다." classname="touch.baton.domain.runnerpost.RunnerPostTest$Create" time="0.0"/>
+  <testcase name="runner 에 null 이 들어갈 경우 예외가 발생한다." classname="touch.baton.domain.runnerpost.RunnerPostTest$Create" time="0.001"/>
   <testcase name="deadline 에 null 이 들어갈 경우 예외가 발생한다." classname="touch.baton.domain.runnerpost.RunnerPostTest$Create" time="0.0"/>
   <testcase name="chatting room count 에 null 이 들어갈 경우 예외가 발생한다." classname="touch.baton.domain.runnerpost.RunnerPostTest$Create" time="0.0"/>
   <testcase name="pull request url 에 null 이 들어갈 경우 예외가 발생한다." classname="touch.baton.domain.runnerpost.RunnerPostTest$Create" time="0.0"/>
   <testcase name="supporter 에 null 이 들어간 경우 아직 리뷰어 할당이 되지 않은 것이다." classname="touch.baton.domain.runnerpost.RunnerPostTest$Create" time="0.0"/>
   <testcase name="contents 에 null 이 들어갈 경우 예외가 발생한다." classname="touch.baton.domain.runnerpost.RunnerPostTest$Create" time="0.0"/>
-  <testcase name="title 에 null 이 들어갈 경우 예외가 발생한다." classname="touch.baton.domain.runnerpost.RunnerPostTest$Create" time="0.001"/>
+  <testcase name="title 에 null 이 들어갈 경우 예외가 발생한다." classname="touch.baton.domain.runnerpost.RunnerPostTest$Create" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
