@@ -20,7 +20,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">56</div>
+<div class="counter">72</div>
 <p>tests</p>
 </div>
 </td>
@@ -32,13 +32,13 @@
 </td>
 <td>
 <div class="infoBox" id="ignored">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>ignored</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.041s</div>
+<div class="counter">1.464s</div>
 <p>duration</p>
 </div>
 </td>
@@ -47,7 +47,7 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
+<div class="infoBox skipped" id="successRate">
 <div class="percent">100%</div>
 <p>successful</p>
 </div>
@@ -58,13 +58,25 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Packages</a>
+<a href="#tab0">Ignored tests</a>
 </li>
 <li>
-<a href="#tab1">Classes</a>
+<a href="#tab1">Packages</a>
+</li>
+<li>
+<a href="#tab2">Classes</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Ignored tests</h2>
+<ul class="linkList">
+<li>
+<a href="classes/touch.baton.domain.runnerpost.service.RunnerPostServiceDeleteTest.html">RunnerPostServiceDeleteTest</a>.
+<a href="classes/touch.baton.domain.runnerpost.service.RunnerPostServiceDeleteTest.html#success_deleteByRunnerPostId()">RunnerPost 식별자값으로 RunnerPost 을 삭제한다.</a>
+</li>
+</ul>
+</div>
+<div id="tab1" class="tab">
 <h2>Packages</h2>
 <table>
 <thead>
@@ -85,7 +97,17 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.277s</td>
+<td>0.317s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="packages/touch.baton.assure.runnerpost.html">touch.baton.assure.runnerpost</a>
+</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0.760s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -95,24 +117,24 @@
 <td>4</td>
 <td>0</td>
 <td>0</td>
-<td>0.025s</td>
+<td>0.001s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="packages/touch.baton.domain.member.html">touch.baton.domain.member</a>
 </td>
-<td>6</td>
+<td>7</td>
 <td>0</td>
 <td>0</td>
-<td>0.002s</td>
+<td>0.001s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="packages/touch.baton.domain.member.vo.html">touch.baton.domain.member.vo</a>
 </td>
-<td>5</td>
+<td>6</td>
 <td>0</td>
 <td>0</td>
 <td>0.002s</td>
@@ -135,7 +157,7 @@
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0.092s</td>
+<td>0.026s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -145,7 +167,7 @@
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0.015s</td>
+<td>0.016s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -155,28 +177,48 @@
 <td>12</td>
 <td>0</td>
 <td>0</td>
-<td>0.008s</td>
+<td>0.005s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="packages/touch.baton.domain.runnerpost.controller.html">touch.baton.domain.runnerpost.controller</a>
 </td>
-<td>1</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0.586s</td>
+<td>0.116s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
-<a href="packages/touch.baton.domain.runnerpost.service.html">touch.baton.domain.runnerpost.service</a>
+<a href="packages/touch.baton.domain.runnerpost.controller.read.html">touch.baton.domain.runnerpost.controller.read</a>
 </td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.020s</td>
+<td>0.048s</td>
 <td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="packages/touch.baton.domain.runnerpost.repository.html">touch.baton.domain.runnerpost.repository</a>
+</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0.048s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="skipped">
+<a href="packages/touch.baton.domain.runnerpost.service.html">touch.baton.domain.runnerpost.service</a>
+</td>
+<td>6</td>
+<td>0</td>
+<td>1</td>
+<td>0.081s</td>
+<td class="skipped">100%</td>
 </tr>
 <tr>
 <td class="success">
@@ -185,7 +227,7 @@
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0.001s</td>
+<td>0.002s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -195,7 +237,7 @@
 <td>5</td>
 <td>0</td>
 <td>0</td>
-<td>0.002s</td>
+<td>0.005s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -212,10 +254,10 @@
 <td class="success">
 <a href="packages/touch.baton.domain.tag.repository.html">touch.baton.domain.tag.repository</a>
 </td>
-<td>1</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
-<td>0.006s</td>
+<td>0.031s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -231,7 +273,7 @@
 </tbody>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Classes</h2>
 <table>
 <thead>
@@ -252,17 +294,37 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.277s</td>
+<td>0.317s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
-<a href="classes/touch.baton.domain.common.vo.ChattingRoomCountTest.html">touch.baton.domain.common.vo.ChattingRoomCountTest</a>
+<a href="classes/touch.baton.assure.runnerpost.RunnerPostAssuredDeleteTest.html">touch.baton.assure.runnerpost.RunnerPostAssuredDeleteTest</a>
 </td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.023s</td>
+<td>0.672s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/touch.baton.assure.runnerpost.RunnerPostAssuredReadTest.html">touch.baton.assure.runnerpost.RunnerPostAssuredReadTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.088s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/touch.baton.domain.common.vo.ChattingCountTest.html">touch.baton.domain.common.vo.ChattingCountTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -292,17 +354,17 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.001s</td>
+<td>0s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="classes/touch.baton.domain.member.MemberTest$Create.html">touch.baton.domain.member.MemberTest$Create</a>
 </td>
-<td>6</td>
+<td>7</td>
 <td>0</td>
 <td>0</td>
-<td>0.002s</td>
+<td>0.001s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -337,12 +399,22 @@
 </tr>
 <tr>
 <td class="success">
-<a href="classes/touch.baton.domain.member.vo.NameTest.html">touch.baton.domain.member.vo.NameTest</a>
+<a href="classes/touch.baton.domain.member.vo.ImageUrlTest.html">touch.baton.domain.member.vo.ImageUrlTest</a>
 </td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/touch.baton.domain.member.vo.NameTest.html">touch.baton.domain.member.vo.NameTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -372,7 +444,7 @@
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0.092s</td>
+<td>0.026s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -382,7 +454,7 @@
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0.015s</td>
+<td>0.016s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -392,7 +464,7 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.005s</td>
+<td>0.001s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -402,7 +474,7 @@
 <td>11</td>
 <td>0</td>
 <td>0</td>
-<td>0.003s</td>
+<td>0.004s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -412,7 +484,67 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.586s</td>
+<td>0.071s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/touch.baton.domain.runnerpost.controller.RunnerPostControllerTest.html">touch.baton.domain.runnerpost.controller.RunnerPostControllerTest</a>
+</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>-</td>
+<td class="success">-</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/touch.baton.domain.runnerpost.controller.RunnerPostControllerTest$Update.html">touch.baton.domain.runnerpost.controller.RunnerPostControllerTest$Update</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.045s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/touch.baton.domain.runnerpost.controller.read.RunnerPostControllerReadTest.html">touch.baton.domain.runnerpost.controller.read.RunnerPostControllerReadTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.048s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/touch.baton.domain.runnerpost.repository.RunnerPostRepositoryDeleteTest.html">touch.baton.domain.runnerpost.repository.RunnerPostRepositoryDeleteTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.015s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/touch.baton.domain.runnerpost.repository.RunnerPostRepositoryReadTest.html">touch.baton.domain.runnerpost.repository.RunnerPostRepositoryReadTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.008s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/touch.baton.domain.runnerpost.repository.RunnerPostRepositoryTest.html">touch.baton.domain.runnerpost.repository.RunnerPostRepositoryTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.025s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -422,7 +554,37 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.020s</td>
+<td>0.014s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="skipped">
+<a href="classes/touch.baton.domain.runnerpost.service.RunnerPostServiceDeleteTest.html">touch.baton.domain.runnerpost.service.RunnerPostServiceDeleteTest</a>
+</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>0.009s</td>
+<td class="skipped">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/touch.baton.domain.runnerpost.service.RunnerPostServiceReadTest.html">touch.baton.domain.runnerpost.service.RunnerPostServiceReadTest</a>
+</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0.027s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/touch.baton.domain.runnerpost.service.RunnerPostServiceUpdateTest.html">touch.baton.domain.runnerpost.service.RunnerPostServiceUpdateTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.031s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -432,7 +594,7 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0s</td>
+<td>0.001s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -452,7 +614,7 @@
 <td>5</td>
 <td>0</td>
 <td>0</td>
-<td>0.002s</td>
+<td>0.005s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -482,7 +644,7 @@
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0s</td>
+<td>0.001s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -492,7 +654,17 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>0.002s</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/touch.baton.domain.tag.repository.RunnerPostTagRepositoryTest.html">touch.baton.domain.tag.repository.RunnerPostTagRepositoryTest</a>
+</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0.024s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -502,7 +674,7 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.006s</td>
+<td>0.007s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -526,7 +698,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.0</a> at Jul 19, 2023, 6:28:09 PM</p>
+<a href="http://www.gradle.org">Gradle 8.0</a> at Jul 30, 2023, 2:41:30 PM</p>
 </div>
 </div>
 </body>
