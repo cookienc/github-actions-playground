@@ -41,7 +41,7 @@ jobs:
           distribution: 'corretto'
       - name: Run Spring boot
         run: |
-          cd baton
-          cd build
-          cd libs
+          cd baton/build
+          echo '======='
+          ls
           nohup java -jar baton-0.0.1-SNAPSHOT.jar &
